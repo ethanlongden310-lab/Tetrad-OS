@@ -1,2 +1,2 @@
 # Tetrad-OS
-Tetrad OS non-scratch files.
+Tetrad OS source code.

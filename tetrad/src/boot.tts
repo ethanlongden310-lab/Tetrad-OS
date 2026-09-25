@@ -1,0 +1,4 @@
+include sys;
+func main(){
+    sys.out("testing...\n\nPlease note that this is a PLACEHOLDER and will likely not actually work because we have no compiler.");
+}

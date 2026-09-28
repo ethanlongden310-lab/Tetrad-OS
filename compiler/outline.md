@@ -27,7 +27,7 @@ Calling a function from a module is syntaxically similar to python, except with 
 # Special builtins:
 + `runasm(<str>)` Compiler alters the params here but otherwise leaves it exactly the same
 + `jump(<int>)` Compiler replaces with a corrected jump call
-The `do` param: see later
++ The `do` param: see later
 
 # The `do` param
 Always only allows a function. The function is passed in via curly braces after the rest of the function. The `do` parameter must be declared in CAPS and can be called like any function within your function

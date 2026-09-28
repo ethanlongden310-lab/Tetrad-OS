@@ -43,3 +43,16 @@ func main(){
     }
 }
 ```
+# What include actually should do
+`include <module>` should trigger the compiler to find $module.md, insert it into the program, then retain a variable stating the address of the module.
+# How functions should work
+The standard parameter/return passing for functions should be:
+## Call
+Push each param in order to the stack, The function then controls the memory for these while running
+## Return
+Pushes return to stack, jumps back to after the call.
+# Require
+DO NOT USE UNLESS NECESSARY!!!
+The require keyword is meant to be an alternative to include, to keep file sizes of larger scripts small. It keeps flags of all module loaded into memory, and links the program at runtime.
+The main use case of this is for large projects, but it will impact program startup times. So don't use.
+You also don't need to implement it yet

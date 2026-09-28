@@ -19,7 +19,7 @@ opcodes = {
     "hard":11,
     "exarg":12
 }
-charcodes = ["",1,2,2,3,4,5,6,7,8,9,0,"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," ","!"]
+charcodes = ["",1,2,3,4,5,6,7,8,9,0,"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," ","!"]
 charcodes = charcodes+[""for i in range(255)]
 charcodes[255] = "*" #this is the std::eof character to make stnd (scratch picked up on it so I added an n) flush stdstack to stdout
 e=[]

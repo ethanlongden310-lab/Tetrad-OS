@@ -1,0 +1,4 @@
+include sys;
+func main(){
+    sys.out("hello world")
+}

@@ -4,4 +4,11 @@ with open(
     ) as tocompf: #I use namef to show its the file version
     tocomp = tocompf.read()
     print(tocomp)
-    #code goes here
+    for i in tocomp:
+        tmps = ""
+        tmpl = []
+        if i == ";":
+            tmpl.append(tmps)
+        else:
+            tmps = tmps+i
+    print(tmpl)

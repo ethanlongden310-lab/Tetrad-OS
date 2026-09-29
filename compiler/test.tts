@@ -1,4 +1,4 @@
 include sys;
-func main(){
+func main(bool a, bool b){
     sys.out("hello world")
 }

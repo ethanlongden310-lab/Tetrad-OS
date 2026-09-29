@@ -30,9 +30,10 @@ with open(
             tmpd = {}
             for j in tmpl:
                 tmpd.update({j.lstrip(" ").split(" ")[1]:{"type":j.lstrip(" ").split(" ")[0]}}) #Yes, this is a monolithic code block. I can't be bothered to fix it
+            params = tmpd
             ast["vars"].update({i.split(" ")[1].split("(")[0]:{
                 "type":"func",
-                "params":tmpd,
+                "params":params,
                 "value":{}
             }})
         #Add logic for bool, func, int, str, etc.

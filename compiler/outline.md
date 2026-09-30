@@ -56,3 +56,13 @@ DO NOT USE UNLESS NECESSARY!!!
 The require keyword is meant to be an alternative to include, to keep file sizes of larger scripts small. It keeps flags of all module loaded into memory, and links the program at runtime.
 The main use case of this is for large projects, but it will impact program startup times. So don't use.
 You also don't need to implement it yet
+
+# pipeline
++ parse the file into lines, split by semicolons and a \n before }&) and after {&(
++ iterate through it, using the imin stack to keep track of the current context
++ should constantly update the AST
++ go through the ast, inserting proper code for function calls, variables, etc
++ add some of the compile-time data to the end so other files can call functions from here. (note: these will require the public keyword)
+
+# public keyword
+tells compiler to add it and the pointer to the ACCESS_META section of the file, for use by other files when using require.

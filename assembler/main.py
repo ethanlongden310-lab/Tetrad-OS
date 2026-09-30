@@ -72,7 +72,7 @@ print(e)
 memoff = len(d)
 for i in range(len(d)):
     if i%2==1:
-        if not ((last in exempt) or ("$" in i)): 
+        if not ((last in exempt) or ("$" in str(i))): 
             d[i] = int(d[i])+memoff-0
     
     last = d[i]

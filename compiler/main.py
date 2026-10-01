@@ -2,6 +2,7 @@ import sys
 #Run "cd compiler; python main.py test.tts"
 ast = {
     "include":[],
+    "require":[],
     "vars":{}
 }
 imin = []

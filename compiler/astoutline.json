@@ -1,0 +1,31 @@
+{
+    "include": [
+        "sys"
+    ],
+    "require": [],
+    "vars": {
+        "main": {
+            "type": "function",
+            "params": {
+                "a": {
+                    "type": "bool"
+                },
+                "b": {
+                    "type": "bool"
+                }
+            },
+            "value": [
+                {
+                    "type": "call",
+                    "func": "sys.out",
+                    "params": [
+                        {
+                            "type": "str",
+                            "value": "hello world"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
